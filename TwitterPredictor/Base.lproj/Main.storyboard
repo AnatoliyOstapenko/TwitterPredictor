@@ -44,9 +44,12 @@
                                                     <constraint firstAttribute="width" constant="250" id="GkF-nq-wwn"/>
                                                     <constraint firstAttribute="height" constant="60" id="spk-oD-Td4"/>
                                                 </constraints>
-                                                <state key="normal" title="Button" backgroundImage="QuizButton">
+                                                <state key="normal" title="PREDICTION" backgroundImage="QuizButton">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="predictionButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t9T-AT-Aaf"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.039547160269999999" green="0.043448723850000003" blue="0.050605855880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -73,6 +76,10 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="x2c-WB-TQb" secondAttribute="trailing" constant="10" id="dop-gm-BqP"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emotionLabel" destination="7PO-Rc-ZAt" id="n8k-ff-XAq"/>
+                        <outlet property="twitterTextField" destination="CkB-JO-xDn" id="Vpg-N1-WvA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
